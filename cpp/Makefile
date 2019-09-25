@@ -2,7 +2,7 @@ CXX = g++
 
 .PHONY: clean
 
-main.out: main.cpp dog.cpp animal.cpp
+main.out: main.cpp car.cpp dog.cpp animal.cpp
 	$(CXX) -o '$@' -std=c++11 $^
 
 clean:

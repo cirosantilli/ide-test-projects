@@ -3,6 +3,15 @@
 == Entries
 
 * Call hierarchy:
+* Languages:
+** C++:
+*** parsing with libllvm:
+** Python:
+*** Eliminates impossible method references by class:
+* Distribution packages:
+** Ubuntu:
+* Extension system
+** Install extensions from command line:
 * Find references to virtual method calls:
 * GDB step debug:
 * Git trackable project configuration:
@@ -13,13 +22,21 @@
 
 == vscodium
 
-* Jump to file: Ctrl + P (1.38.1)
+* Call hierarchy: no https://github.com/microsoft/vscode-cpptools/issues/16 (1.38.1)
+* Distribution packages:
+** Ubuntu: no (19.04)
+* Extension system
+** Install extensions from command line: yes, e.g.: `codium --install-extension ms-python.python` https://stackoverflow.com/questions/34286515/how-to-install-visual-studio-code-extensions-from-command-line (1.38.1)
+* Find references to possible virtual method calls: no, marked at `[Not a reference]` (1.38.1)
+* Languages
+** C++: yes, official extension: https://github.com/microsoft/vscode-cpptools
+** Python: yes, official extension: https://github.com/microsoft/vscode-python
+*** Eliminates impossible method references by class: no (1.38.1)
 * GDB step debug: yes, but setup is annoying on Linux (1.38.1)
 * Git trackable project configuration: yes, JSON (1.38.1)
+* Jump to file: Ctrl + P (1.38.1)
 * Method overview of current file: Ctrl + Shift + O https://stackoverflow.com/questions/36154283/method-list-in-visual-studio-code (1.38.1)
-* Call hierarchy: no https://github.com/microsoft/vscode-cpptools/issues/16 (1.38.1)
 * Type hierarchy: no https://github.com/microsoft/vscode-cpptools/issues/3799 (1.38.1)
-* Find references to possible virtual method calls: no, marked at `[Not a reference]` (1.38.1)
 
 Further comments:
 
