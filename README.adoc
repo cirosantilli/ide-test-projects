@@ -9,6 +9,7 @@
 ** Python:
 *** Eliminates impossible method references by class:
 * Distribution packages:
+** Snap:
 ** Ubuntu:
 * Extension system
 ** Install extensions from command line:
@@ -17,7 +18,9 @@
 * Git trackable project configuration:
 * Jump to file:
 * Method overview:
+* Meta variables for run (e.g. `${PROJECT_ROOT}`):
 * Out-of-tree auto generated code:
+* Sees standard library:
 * Type hierarchy:
 
 == vscodium
@@ -42,3 +45,23 @@ Further comments:
 
 * you have to setup a bunch of JSON files manually, can't find templates on C/C++ plugin (1.38.1)
 * the documentation documents WSL, MacOS and MinGW, and MSVC, but not Linux distros. As a result you follow WSL and skip a bunch of WSL specific crap that is not needed on Linux (1.38.1)
+
+== pycharm
+
+https://stackoverflow.com/questions/19912452/pycharm-getting-the-project-dir-in-the-run-debug-configuration-window
+
+* Distribution packages:
+** Snap: yes, `sudo snap install pycharm-community --classic` (2019.2.3)
+* Languages:
+** Python: yes? :-)
+*** Eliminates impossible method references by class: yes (2019.2.3)
+* Git trackable project configuration: somewhat, a bunch of large-ish XML (2019.2.3)
+* Jump to file: Ctrl + Shift + N (2019.2.3)
+* Meta variables for run (e.g. `${PROJECT_ROOT}`): no??? https://stackoverflow.com/questions/19912452/pycharm-getting-the-project-dir-in-the-run-debug-configuration-window
+* Type hierarchy: yes, Ctrl + H
+
+== Eclipse
+
+* Jump to file: Ctrl + Shift + R (2019-09 R (4.13.0))
+* Git trackable project configuration: likely not, horrendous XML
+* Sees standard library: yes, but you have to spend half an hour to find out how!!! https://stackoverflow.com/questions/10373788/how-to-solve-unresolved-inclusion-iostream-in-a-c-file-in-eclipse-cdt/51099533#51099533

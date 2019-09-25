@@ -1,1 +1,6 @@
 *.out
+
+# Eclipse stuff
+.cproject
+.project
+.settings

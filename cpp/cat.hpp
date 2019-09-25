@@ -1,11 +1,11 @@
-#ifndef DOG_HPP
-#define DOG_HPP
+#ifndef CAT_HPP
+#define CAT_HPP
 
 #include <string>
 
 #include "animal.hpp"
 
-class Dog : public Animal {
+class Cat : public Animal {
     public:
         std::string noise();
 };
