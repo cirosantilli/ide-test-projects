@@ -6,6 +6,8 @@
 * Languages:
 ** C++:
 *** parsing with libllvm:
+*** custom include paths:
+*** find references to possible polymorphic virtual method calls:
 ** Python:
 *** Eliminates impossible method references by class:
 * Distribution packages:
@@ -13,7 +15,6 @@
 ** Ubuntu:
 * Extension system
 ** Install extensions from command line:
-* Find references to virtual method calls:
 * GDB step debug:
 * Git trackable project configuration:
 * Jump to file:
@@ -30,9 +31,10 @@
 ** Ubuntu: no (19.04)
 * Extension system
 ** Install extensions from command line: yes, e.g.: `codium --install-extension ms-python.python` https://stackoverflow.com/questions/34286515/how-to-install-visual-studio-code-extensions-from-command-line (1.38.1)
-* Find references to possible virtual method calls: no, marked at `[Not a reference]` (1.38.1)
 * Languages
 ** C++: yes, official extension: https://github.com/microsoft/vscode-cpptools
+*** custom include paths: finds in-project paths automatically, must be fragile
+*** find references to possible polymorphic virtual method calls: no, marked at `[Not a reference]` (1.38.1)
 ** Python: yes, official extension: https://github.com/microsoft/vscode-python
 *** Eliminates impossible method references by class: no (1.38.1)
 * GDB step debug: yes, but setup is annoying on Linux (1.38.1)
@@ -62,6 +64,10 @@ https://stackoverflow.com/questions/19912452/pycharm-getting-the-project-dir-in-
 
 == Eclipse
 
+* Call hierarchy: Ctrl + Alt + H (2019-09 R (4.13.0))
+* Git trackable project configuration: likely not, horrendous XML, does not track basic project properties such as custom C++ include paths, horrendously generic names like `.project` and `.cproject`
 * Jump to file: Ctrl + Shift + R (2019-09 R (4.13.0))
-* Git trackable project configuration: likely not, horrendous XML
 * Sees standard library: yes, but you have to spend half an hour to find out how!!! https://stackoverflow.com/questions/10373788/how-to-solve-unresolved-inclusion-iostream-in-a-c-file-in-eclipse-cdt/51099533#51099533
+** C++: yes, official extension: CDT
+*** custom include paths: yes, Project Properties, Preprocessor Include Paths, GNU C++, CDT User Setting Entries
+*** find references to possible polymorphic virtual method calls: yes
