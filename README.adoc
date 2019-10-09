@@ -8,6 +8,7 @@
 *** parsing with libllvm:
 *** custom include paths:
 *** find references to possible polymorphic virtual method calls:
+*** UML:
 ** Python:
 *** Eliminates impossible method references by class:
 * Distribution packages:
@@ -23,6 +24,8 @@
 * Out-of-tree auto generated code:
 * Sees standard library:
 * Type hierarchy:
+** Method in type hierarchy:
+* Bugs:
 
 == vscodium
 
@@ -71,3 +74,6 @@ https://stackoverflow.com/questions/19912452/pycharm-getting-the-project-dir-in-
 ** C++: yes, official extension: CDT
 *** custom include paths: yes, Project Properties, Preprocessor Include Paths, GNU C++, CDT User Setting Entries
 *** find references to possible polymorphic virtual method calls: yes
+*** UML: no https://stackoverflow.com/questions/3155448/eclipse-plugin-for-generating-uml-diagram-from-c-code
+* Type hierarchy: yes, F4 (2019-09 R (4.13.0))
+** Method in type hierarchy: yes, Ctrl + T for quick, F4 for docked with the method highlighted: https://stackoverflow.com/questions/17078749/eclipse-shortcut-to-find-all-children-class-that-override-a-method (2019-09 R (4.13.0))
