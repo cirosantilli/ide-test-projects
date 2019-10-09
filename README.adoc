@@ -77,3 +77,5 @@ https://stackoverflow.com/questions/19912452/pycharm-getting-the-project-dir-in-
 *** UML: no https://stackoverflow.com/questions/3155448/eclipse-plugin-for-generating-uml-diagram-from-c-code
 * Type hierarchy: yes, F4 (2019-09 R (4.13.0))
 ** Method in type hierarchy: yes, Ctrl + T for quick, F4 for docked with the method highlighted: https://stackoverflow.com/questions/17078749/eclipse-shortcut-to-find-all-children-class-that-override-a-method (2019-09 R (4.13.0))
+* Bugs:
+** https://stackoverflow.com/questions/58305112/eclipse-cdt-override-popup-tooltip-message-wont-go-away-even-across-other-windo/58305113#58305113 Eclipse unkillable popups
