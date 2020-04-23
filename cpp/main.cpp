@@ -5,6 +5,7 @@
 #include "car.hpp"
 #include "cat.hpp"
 #include "dog.hpp"
+#include "bulldog.hpp"
 #include "include_in_custom_path.hpp"
 
 int main(int argc, char **argv) {
