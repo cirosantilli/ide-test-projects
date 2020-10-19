@@ -2,6 +2,8 @@
 #include <iostream>
 #include <unordered_set>
 
+#include "animal.hpp"
+#include "animal_template.hpp"
 #include "car.hpp"
 #include "cat.hpp"
 #include "dog.hpp"
@@ -10,15 +12,21 @@
 
 int main(int argc, char **argv) {
     // Deterministic inheritance reference.
-    Animal *animal = new Dog();
-    std::cout << animal->noise() << std::endl;
-    std::cout << animal->poo() << std::endl;
+    {
+        Dog dog;
+        Animal *animal = &dog;
+        assert(animal->noise() == "woof");
+        assert(animal->poo()   == "ewww");
+    }
 
     // Unrelated method with the same name.
-    Car *car = new Car();
-    std::cout << car->noise() << std::endl;
+    {
+        Car thecar;
+        Car *car = &thecar;
+        assert(car->noise() == "vrooom");
+    }
 
-    // Unresolved virtual reference.
+    std::cout << "Unresolved virtual reference" << std::endl;
     {
         Animal *animal;
         if (argc == 1) {
@@ -27,6 +35,13 @@ int main(int argc, char **argv) {
             animal = new Dog();
         }
         std::cout << animal->noise() << std::endl;
+    }
+    std::cout << std::endl;
+
+    // List used templae possibilities
+    {
+        Dog dog;
+        assert(template_animal_noise(dog) == "woof");
     }
 
     // C++11 library.
