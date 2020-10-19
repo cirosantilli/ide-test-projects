@@ -38,10 +38,12 @@ int main(int argc, char **argv) {
     }
     std::cout << std::endl;
 
-    // List used templae possibilities
+    // List used template possibilities
     {
         Dog dog;
         assert(template_animal_noise(dog) == "woof");
+        AnimalTemplate<Dog> animal_template(dog);
+        assert(animal_template.noise() == "woof");
     }
 
     // C++11 library.

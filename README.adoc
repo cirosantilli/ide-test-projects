@@ -79,7 +79,7 @@ https://stackoverflow.com/questions/19912452/pycharm-getting-the-project-dir-in-
 *** view method override tree: Ctrl + T (Type hierarchy)
 **** https://stackoverflow.com/questions/17078749/eclipse-shortcut-to-find-all-children-class-that-override-a-method
 **** https://stackoverflow.com/questions/24090958/eclipse-what-is-a-better-way-to-find-the-implementation-of-a-virtual-function/61392599#61392599
-*** List used templae possibilities
+*** List used template possibilities
 **** no (2020-03 (4.15.0)), cannot find question
 * Type hierarchy: yes, F4 (2019-09 R (4.13.0))
 ** Method in type hierarchy: yes, Ctrl + T for quick, F4 for docked with the method highlighted: https://stackoverflow.com/questions/17078749/eclipse-shortcut-to-find-all-children-class-that-override-a-method (2019-09 R (4.13.0))

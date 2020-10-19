@@ -2,7 +2,7 @@ CXX = g++
 
 .PHONY: clean
 
-main.out: main.cpp animal.cpp car.cpp cat.cpp dog.cpp bulldog.cpp
+main.out: main.cpp animal.cpp animal_template.cpp car.cpp cat.cpp dog.cpp bulldog.cpp
 	$(CXX) -I custom_include_path/ -o '$@' -std=c++11 $^
 
 clean:
