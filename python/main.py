@@ -1,10 +1,14 @@
 #!/usr/bin/env python3
 
+import os
 import sys
 
 import car
 import cat
 import dog
+
+print(f'{os.environ["PYTHONPATH"]=}')
+print(f'{sys.argv=}')
 
 # Deterministic inheritance reference.
 my_animal = dog.Dog()
@@ -26,3 +30,6 @@ if len(sys.argv) == 1:
 else:
     animal_or_car = dog.Dog()
 print(animal_or_car.noise())
+
+import insubdir
+print(f'{insubdir.a=}')

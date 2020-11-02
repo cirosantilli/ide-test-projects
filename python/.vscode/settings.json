@@ -1,0 +1,10 @@
+{
+    // https://stackoverflow.com/questions/53653083/how-to-correctly-set-pythonpath-for-visual-studio-code
+    // https://stackoverflow.com/questions/41471578/visual-studio-code-how-to-add-multiple-paths-to-python-path
+    "python.autoComplete.extraPaths": [
+        "${workspaceFolder}/subdir_in_path"
+    ],
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}/subdir_in_path"
+    ]
+}
