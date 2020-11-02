@@ -11,6 +11,8 @@
 #include "include_in_custom_path.hpp"
 
 int main(int argc, char **argv) {
+    (void)argv;
+
     // Deterministic inheritance reference.
     {
         Dog dog;
