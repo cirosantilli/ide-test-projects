@@ -1,0 +1,4 @@
+vscode:
+
+* Ctrl + Shift + B: `make` build
+* F5: `make` and then `gdb -ex start --args main.out`. Related: https://stackoverflow.com/questions/56406292/setup-c-in-vs-code-under-linux-tasks-json-and-launch-json Tested on ubuntu 24.04
